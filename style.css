@@ -1,0 +1,171 @@
+body {
+    background: #696969;
+    margin: 20px;
+  }
+  
+  #ativar {
+    display: block;
+    margin: 20px auto;
+  }
+  
+  #modal h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px 0px 30px;
+    animation: titulo 3s linear infinite
+  }
+  
+  #modal input {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background: #f7f7f7;
+  }
+  #modal h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10px;
+    animation: login 3s infinite;
+}
+  #modal button {
+    margin-top: 20px;
+    display: block;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+    padding: 0.6rem 2rem;
+    border: none;
+    background: #2aac03;
+    border-radius: 4px;
+    color: #003500;
+  }
+  
+  #modal {
+    padding: 30px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto ;
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  
+  #modal.animar {
+    animation-name: slide;
+    animation-duration: 0.3s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+  #img1 {
+    width: 40px;
+    animation: load 6s linear infinite ;
+    margin-left: 48%;
+  }
+ .imgs {
+    width: 60px;
+    animation: img 8s linear infinite ;
+  }
+  #pac{
+    border-radius: 50%;
+    width:50px;
+  }
+  .late{
+    display: flexbox;
+    width: 60px;
+    animation: late 8s linear infinite ;
+  }
+  #se{
+    float: left;
+  }
+  #hum{
+    float: right;
+    margin-left: 90%;
+  }
+  #sei{
+    float: left;
+    margin-left: 20%;
+  }
+  #t{
+    float: left;
+    margin-left: 70%;
+  }
+  @keyframes img {
+    0%{
+        transform: translate(0px);
+    }    
+    50%{
+        transform: translate(1500px) rotate(180deg);
+    }
+  }
+  @keyframes slide {
+    to {
+      opacity: 1;
+    }
+  }
+
+  
+  @keyframes load {
+        0%{
+            transform: translate(0px);
+        }
+        20%{
+            transform: translate(250px) rotate(90deg);
+        }
+        40%{transform: translate(250px, -350px) rotate(180deg);
+      }
+      60%{
+        transform: translate(-250px, -350px) rotate(90deg);
+      }
+      80%{
+        transform: translate(-250px, 10px) rotate(0deg);
+      }
+    }
+  @keyframes loadFrames {
+    0% {
+      transform: translate(0px) scale(0.5);
+    }
+    25% {
+      transform: translate(200px);
+    }
+    50% {
+      transform: translate(200px, -200px) scale(1.5);
+    }
+    75% {
+      transform: translate(0px, -200px);
+    }
+    100% {
+      transform: translate(0px) scale(0.5);
+    }
+  }
+  @keyframes login{
+    from{
+        color: white;
+    }
+    to{
+        color: black;
+    }
+    
+  }
+  @keyframes titulo {
+    0%{
+        font-size: small;
+    }
+    50%{
+        font-size: 30px;
+    }
+    100%{
+        font-size: small;
+    }
+}
+@keyframes late {
+    0%{
+        transform: translate(0px);
+    }    
+    50%{
+        transform: translate(0px, 280px) rotate(180deg);
+    }
+}
